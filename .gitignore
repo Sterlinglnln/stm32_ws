@@ -1,0 +1,29 @@
+# 编译生成文件
+*.elf
+*.hex
+*.bin
+*.map
+*.d
+*.o
+*.a
+*.d
+*.axf
+*.out
+Debug/
+Release/
+obj/
+tmp/
+# STM32CubeMX 生成的中间文件
+*.ioc.tmp
+*.wdp.tmp
+# STM32CubeIDE 相关文件
+.metadata/
+.settings/
+.project
+.cproject
+# 本地配置文件
+.vscode/
+# 备份文件
+*~
+# 日志文件
+*.log
