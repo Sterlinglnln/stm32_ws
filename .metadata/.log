@@ -97,3 +97,47 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/sterl
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2025-09-21 22:51:36.434
 !MESSAGE ProjectImporter: mdfind -name lsregister didn't returned anything
+!SESSION 2025-09-22 10:00:19.141 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CN
+Framework arguments:  -keyring /Users/sterlinglnln/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/sterlinglnln/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-22 10:00:27.974
+!MESSAGE Log4j2 initialized with config file /Users/sterlinglnln/stm32_ws/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 0 2025-09-22 10:00:39.251
+!MESSAGE Port already in use: 41337; nested exception is: 
+	java.net.BindException: Address already in use
+!STACK 0
+java.rmi.server.ExportException: Port already in use: 41337; nested exception is: 
+	java.net.BindException: Address already in use
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:356)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:251)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415)
+	at java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147)
+	at java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235)
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:473)
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:358)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporterStartup$1.run(MCUProjectImporterStartup.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.Net.bind(Net.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:171)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createServerSocket(TCPDirectSocketFactory.java:45)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:672)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:344)
+	... 8 more
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-22 10:00:39.292
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2025-09-22 10:00:40.182
+!MESSAGE ProjectImporter: mdfind -name lsregister didn't returned anything
