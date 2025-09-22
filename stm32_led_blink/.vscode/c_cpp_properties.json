@@ -17,7 +17,7 @@
             "cStandard": "c11",
             "cppStandard": "c++14",
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc"
+            "compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc"   // only on macOS
         }
     ],
     "version": 4
