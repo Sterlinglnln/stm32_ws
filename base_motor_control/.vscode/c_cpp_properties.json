@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",  // 名称改为 STM32 更直观
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Include"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",  // 启用 HAL 库
+                "STM32F103xB"      // 关键：添加芯片型号宏（STM32F103C8T6 对应 x8）
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",  // 改为 ARM 交叉编译器
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm",  // 匹配 ARM 编译器的 IntelliSense 模式
+            "compilerArgs": [
+                "-mcpu=cortex-m3",  // 针对 STM32F103 的 cortex-m3 内核
+                "-mthumb"           // 启用Thumb指令集
+            ]
+        }
+    ],
+    "version": 4
+}
