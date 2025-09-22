@@ -1,10 +1,10 @@
-19:00:34 **** Incremental Build of configuration Debug for project stm32_led_blink ****
-make -j20 all 
+20:25:26 **** Incremental Build of configuration Debug for project stm32_led_blink ****
+make -j7 all 
 arm-none-eabi-size  stm32_led_blink.elf 
    text	   data	    bss	    dec	    hex	filename
    4596	     12	   1572	   6180	   1824	stm32_led_blink.elf
 Finished building: default.size.stdout
  
 
-19:00:34 Build Finished. 0 errors, 0 warnings. (took 64ms)
+20:25:26 Build Finished. 0 errors, 0 warnings. (took 272ms)
 
