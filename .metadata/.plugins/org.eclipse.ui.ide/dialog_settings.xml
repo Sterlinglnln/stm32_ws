@@ -7,17 +7,18 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/sterlinglnln/stm32_ws/base_motor_control"/>
 			<item value="/home/larry/stm32_ws/stm32_led_blink"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="762"/>
-			<item key="DIALOG_Y_ORIGIN" value="290"/>
-			<item key="DIALOG_WIDTH" value="788"/>
-			<item key="DIALOG_HEIGHT" value="943"/>
-			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+			<item key="DIALOG_X_ORIGIN" value="377"/>
+			<item key="DIALOG_Y_ORIGIN" value="122"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="687"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 		</section>
 	</section>
 	<section name="SmartImportWizard">
