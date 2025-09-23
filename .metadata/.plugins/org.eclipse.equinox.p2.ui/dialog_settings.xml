@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
-		<item key="DIALOG_X_ORIGIN" value="710"/>
-		<item key="DIALOG_Y_ORIGIN" value="229"/>
-		<item key="DIALOG_WIDTH" value="1073"/>
-		<item key="DIALOG_HEIGHT" value="889"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+		<item key="DIALOG_X_ORIGIN" value="214"/>
+		<item key="DIALOG_Y_ORIGIN" value="75"/>
+		<item key="DIALOG_WIDTH" value="1040"/>
+		<item key="DIALOG_HEIGHT" value="645"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
 	</section>
 	<section name="AvailableIUsPage">
 		<item key="AvailableViewType" value="1"/>
