@@ -13,3 +13,6 @@ Debug/
 Release/
 obj/
 tmp/
+
+# vscode
+.vscode/
