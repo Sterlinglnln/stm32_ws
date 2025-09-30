@@ -20,6 +20,8 @@
 #include "main.h"
 #include "dma.h"
 #include "gpio.h"
+#include "stm32f103xb.h"
+#include "stm32f1xx_hal.h"
 #include "stm32f1xx_hal_dma.h"
 #include "stm32f1xx_hal_gpio.h"
 
@@ -119,10 +121,14 @@ int main(void)
 
   // RGB灯显示结果
   if (is_match) {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);   // 红灯亮
+    // RGB彩灯亮
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);
   } else {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);   // 绿灯亮
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);  // 蓝灯亮
+    // 不匹配红灯闪烁
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_Delay(500);
   }
 
   /* USER CODE END 2 */
@@ -192,10 +198,8 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-    // 进入错误处理状态，红灯闪烁
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-    HAL_Delay(500);
-
+    // 进入错误处理状态，红灯亮
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
   }
   /* USER CODE END Error_Handler_Debug */
 }
